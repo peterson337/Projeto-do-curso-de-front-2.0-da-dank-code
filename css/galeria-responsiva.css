@@ -5,6 +5,30 @@
     font-family: arial;
 }
 
+.wraper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wraper .img{width: 25%;}
+
+img{
+    max-width: 100%;
+}
+
+/* Tamnha de um tablet */
+@media screen and (max-width: 1024px){
+    .wraper .img{width: 33.3%;}
+}
+
+@media screen and (max-width: 768px){
+    .wraper .img{width: 50%;}
+}
+
+@media screen and (max-width: 580px) {
+    .wraper .img{width: 100%;}
+}
+
 a{
     position: absolute;
     left: 95%;
