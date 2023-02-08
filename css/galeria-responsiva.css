@@ -14,24 +14,39 @@
 
 img{
     max-width: 100%;
+    padding: 2%;
+    
+    
 }
+
+img:hover{
+ filter: grayscale(100%);
+ max-width: 100%;
+}
+
+
 
 /* Tamnha de um tablet */
 @media screen and (max-width: 1024px){
     .wraper .img{width: 33.3%;}
+    .wraper .anim1{width: 33.3%;}
+    
 }
 
 @media screen and (max-width: 768px){
     .wraper .img{width: 50%;}
+    .wraper .anim1{width: 50%;}
 }
 
 @media screen and (max-width: 580px) {
     .wraper .img{width: 100%;}
+    .wraper .anim1{width: 100%;}
 }
 
 a{
     position: absolute;
     left: 95%;
+    bottom: 2%;
     color: black;
     flex-direction: row;
     text-decoration: none;
@@ -40,3 +55,32 @@ a{
 a:hover{
     text-decoration: underline;
     }
+
+:root{
+ --corPadrao: blue;
+ --widthPadro:300px;
+}
+
+@keyframes anim1{
+    50%{content: url(/img/code.png);}
+    40%{content: url(https://blog.dankicode.com/wp-content/uploads/2021/10/linux-para-programar-825x470.png);}
+    100%{content: url(https://blog.dankicode.com/wp-content/uploads/2022/03/3.jpg);}
+    10%{content: url(https://blog.dankicode.com/wp-content/uploads/2022/03/5.jpg);}
+    30%{content: url(https://blog.dankicode.com/wp-content/uploads/2022/03/6.jpg);}
+    50%{content: url(https://blog.dankicode.com/wp-content/uploads/2022/03/2.jpg);}
+    60%{content: url(https://blog.dankicode.com/wp-content/uploads/2020/06/css-inteligente.jpg);}
+}
+
+.anim1{
+    animation-name: anim1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    width: 25%;
+    height: 25%;
+}
+
+.anim1:hover{
+ filter: grayscale(100%);
+ cursor: pointer;
+ animation-play-state: paused;
+}
