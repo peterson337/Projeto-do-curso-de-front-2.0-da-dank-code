@@ -56,11 +56,6 @@ a:hover{
     text-decoration: underline;
     }
 
-:root{
- --corPadrao: blue;
- --widthPadro:300px;
-}
-
 @keyframes anim1{
     50%{content: url(/img/code.png);}
     40%{content: url(https://blog.dankicode.com/wp-content/uploads/2021/10/linux-para-programar-825x470.png);}
