@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        *{margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+    
+        .container{
+            position: relative;
+            height: 500px;
+            text-align: center;
+            
+        }
+
+        .container img{
+            position: absolute;
+            left: 30%;
+            top: 5%;
+            width: 40%;
+            opacity: 0;
+            right: 50%;
+            transition: 1s;
+            border: 5px solid black;
+            box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.4);
+        }
+
+        .bullets{
+            text-align: center;
+        }
+
+        .bullets-single{
+            margin: 0;
+            cursor: pointer;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            background-color: rgb(0, 0, 0);
+            margin: 6px;
+        }
+
+        .active-bullet{
+            background-color: rgb(0, 153, 255);
+        }
+
+    </style>
+
+    <div class="container">
+        <img src="img/doge.png">
+        <img src="img/gato siamês.png">
+        <img src="img/gato.png">
+        <img src="img/lulu da pomerania.png">
+        <img src="img/pinguim.png">
+    </div>
+
+     <div class="bullets">
+        <div style="opacity: 1;" class="bullets-single active-bullet"></div>
+        <div class="bullets-single"></div>
+        <div class="bullets-single"></div>
+        <div class="bullets-single"></div>
+        <div class="bullets-single"></div>
+     </div>
+
+     <script>
+        var lastIndex = 0;
+
+        var images = document.querySelectorAll('.container img');
+     
+        images.forEach((item,index)=>{
+      document.querySelectorAll('.bullets-single')[index]
+      .addEventListener("click",()=>{
+      let lastImage = document.querySelectorAll('.container img')[lastIndex];
+      let actualImage = document.querySelectorAll('.container img')[index];
+
+       document.querySelectorAll('.bullets-single')[lastIndex]
+       .classList.remove("active-bullet");
+
+       document.querySelectorAll('.bullets-single')[index]
+       .classList.add("active-bullet");
+
+      lastImage.style.opacity = 0;
+      actualImage.style.opacity = 1;
+
+      lastIndex = index;
+
+    })
+        })
+     </script>
+
+</body>
