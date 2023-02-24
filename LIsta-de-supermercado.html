@@ -21,6 +21,7 @@
             text-align: center; 
             color: white;
             padding: 20px 0;
+            box-shadow: 0px 1px 5px black;
         }
 
         .lista-cadastro{
@@ -46,9 +47,19 @@
         }
 
         .lista-cadastro input[type=submit]{
-            border-radius: 20%; 
+            border-radius: 20px; 
             margin-left: 10px;
             cursor: pointer;
+            background-color: #00aaff;
+            color: white;
+            font-weight: 900;
+            flex: 1;
+            font-size: 19px;
+            
+        }
+
+        .lista-cadastro input[type=submit]:active{
+            background-color: blue;
         }
 
         .lista-produto-single{
@@ -80,6 +91,23 @@
             margin: 20px;
         }
 
+        button[name = "limpar"]{
+            background-color: red;
+            position: absolute;
+            left: 45%;
+            cursor: pointer;
+            width: 10%;
+            height: 5%;
+            border-radius: 20px;
+            color: white;
+            font-weight: 900;
+            font-size: 16px;
+        }
+
+        button[name = "limpar"]:active{
+            background-color: rgb(168, 2, 2);
+        }
+
     </style>
 
 
@@ -101,8 +129,9 @@
         <h1>Total: R$0</h1>
     </div>
 
+    <div class="botão">
     <button name="limpar">Limpar</button>
-   
+    </div>
 <script src="js/LIsta-de-supermercado.js"></script>
 
 
