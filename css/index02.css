@@ -80,6 +80,9 @@ body{
     padding-left: 20px;
 }
 
+
+
+
 @media screen and (max-width: 768px){
     .pokemon-box{
         width: 100%;
