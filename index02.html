@@ -19,9 +19,26 @@
 var quantidade = document.getElementById('quantidade');
 quantidade.addEventListener('keyup',()=>{
    pegaPokemons(quantidade.value);
+   if (quantidade.value < 0){
+    alert('Por favor, escreva só números positivos.');
+    quantidade.innerHTML = '';
+    return false;
+   }
 })
 
+//  Verifica se a brra de pesquisa está ou não esta selecionada.
+quantidade = document.getElementById('quantidade');
+quantidade.addEventListener('focus',()=>{
+quantidade.classList.add('focus');
+});
+
+quantidade = document.getElementById('quantidade');
+quantidade.addEventListener('blur',()=>{
+quantidade.classList.remove('focus');
+});
+
 pegaPokemons(1);
+// Requisição.
 function pegaPokemons(quantidade){
     fetch("https://pokeapi.co/api/v2/pokemon?offset=10&limit=10"+quantidade)
     .then(response => response.json())
@@ -36,7 +53,7 @@ function pegaPokemons(quantidade){
     .then(pekemonSingle => {
         pokemons.push({nome:val.name, imagem:pekemonSingle.sprites.front_default});
 
-
+//      Adiciona mais pokemons. 
         if (pokemons.length == quantidade) {
             //Finalizamos nossas aquisições.
         var pokemonBoxes = document.querySelector('.pokemon-boxes');

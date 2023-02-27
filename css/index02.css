@@ -41,7 +41,7 @@ body{
     border-radius: 10px;
     width: 29%;
     margin: 20px 2%;
-    background-color: coral;
+    background-color: gray;
 }
 
 /* Imagem do pekemon*/
@@ -69,7 +69,16 @@ body{
     padding-left: 20px;
 }
 
-
+#quantidade:focus{
+    position: absolute;
+    left: 13%;
+    margin-top: 3%;
+    width: 40%;
+    height: 7%;
+    border-radius: 20px;
+    font-size: 18px;
+    padding-left: 20px;
+}
 
 @media screen and (max-width: 768px){
     .pokemon-box{
