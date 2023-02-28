@@ -21,5 +21,23 @@ h1{
 .perguntas{
     position: absolute;
     margin-left: 4%;
+    cursor: pointer;
 }
+
+[type="button"]{
+ position: absolute;
+ left: 45%;
+ border-radius: 10px;
+ width: 11%;   
+ height: 6%;
+ background-color: darkcyan;
+ color: white;
+ font-weight: 900;
+ cursor: pointer;
+}
+
+[type="button"]:hover{
+    background-color: white;
+    color: darkcyan;
+   }
 
