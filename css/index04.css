@@ -204,7 +204,7 @@ font-family:
 
    .img-beneficios img{max-width: 100%;}
 
-   /* section.Depoimento{
+    section.Depoimento{
       background-color: #FBFCFE;
       padding: 40px 0;
    }
@@ -213,7 +213,75 @@ font-family:
       text-align: center;
       font-size: 50px;
    }
- */
+
+   .container-slide{
+      overflow: hidden;
+      padding: 40px 0;
+   }
+
+   .container-slide-single{
+      float: left;
+      background-color: white;
+      text-align: center;
+      padding: 15px;
+      border-radius: 10px;
+   }
+ 
+   .container-slide-single p{
+      margin: 15px 0;
+      color:  #7E92AC;
+      font-size: 14px;
+
+   }
+
+   .slick-slide {
+      margin-left:27px;
+  
+    }
+  
+    /* the parent */
+    .slick-list {
+      margin-left:-27px;
+     
+    }
+
+    /****SLICK SLIDER****/
+
+.slick-dotted ul{
+  display: block;
+  list-style-type: none;
+  text-align: center;
+  position: relative;
+  top:10px;
+}
+
+.slick-dotted li{
+  display: inline-block;
+  margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+  outline: 0;
+}
+
+.slick-dotted li button{
+   width: 30px;
+   height: 30px;
+  border-radius: 19px;
+  color:  #D2D8EB;
+  border-width: 0;
+  background:  #D2D8EB;
+  opacity: 1;
+  cursor: pointer;
+}
+
+li.slick-active button{
+  background: #255AFF;
+  color: #255AFF;
+}
+
+.slick-slide:focus { outline: none; }
+
    @media screen and (max-width: 768px) {
       .diferenciais{
          flex-wrap: wrap;

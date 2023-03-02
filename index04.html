@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     <!-- Link do CSS -->
     <link rel="stylesheet" href="/css/index04.css">
-                    <!-- Link do javascript -->
-    <script src="js/index04.js" defer></script>
                     <!-- Link do font-awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
                         <!-- Links do google font -->
@@ -109,52 +107,100 @@
     </div>
 </section>
 
-<!-- <section class="Depoimento">
+ <section class="Depoimento">
     <h1>Depoimentos</h1>
     <div style="display: block;" class="center">
+        <br>
        
-       <div class="container-slide">
+       <div style="max-width: 1200px;" class="container-slide">
 
         <div class="container-slide-single">
+            <img src="/img/DEPOIMENTO1.png">
        <h3>Miriam Souza</h3>
-        <p class="p1">O trabalho da Agência Bold foi fundamental para o nosso posicionamento e nossas estratégias de 2021. Juntos
+       <p style="font-size: 15px;">Uber</p>
+        <p>O trabalho da Agência Bold foi fundamental para o nosso posicionamento e nossas estratégias de 2021. Juntos
              tivemos excelentes resultados e nossos clientes ficaram surpresos com a qualidade. Foi um trabalho
               incrível feito a muitas mãos pela Uber e pelo time da Agência Bold.</p>
+            <img src="/img/RATE.png">  
             </div>
 
         <div class="container-slide-single">
-            <h3>Miriam Souza</h3>
-             <p class="p1">O trabalho da Agência Bold foi fundamental para o nosso posicionamento e nossas estratégias de 2021. Juntos
-                  tivemos excelentes resultados e nossos clientes ficaram surpresos com a qualidade. Foi um trabalho
-                   incrível feito a muitas mãos pela Uber e pelo time da Agência Bold.</p>
+            <img src="/img/DEPOIMENTO2.png">
+            <h3>Lucas Mendes</h3>
+            <p style="font-size: 15px;">The North Face</p>
+             <p>Buscamos a Agência Bold para nos ajudar com campanhas de growth 
+                arketing focadas em um público extremamente específico. O produto teve
+                 faturamento maior que 300%.</p>
+                 <img src="/img/RATE.png">  
                  </div>
 
         <div class="container-slide-single">
-            <h3>Miriam Souza</h3>
-             <p class="p1">O trabalho da Agência Bold foi fundamental para o nosso posicionamento e nossas estratégias de 2021. Juntos
-                  tivemos excelentes resultados e nossos clientes ficaram surpresos com a qualidade. Foi um trabalho
-                   incrível feito a muitas mãos pela Uber e pelo time da Agência Bold.</p>
+            <img src="/img/DEPOIMENTO3.png">
+            <h3>Zaya Menphis</h3>
+            <p style="font-size: 15px;">Rappi</p>
+             <p>A estratégia de lançamento da marca não seria a mesma sem o trabalho 
+                comprometido da Agência Bold. Obrigado ao Vinícius, que abraçou nossos
+                 desafios como um de nós.</p>
+                 <img src="/img/RATE.png">  
                  </div>
+
+                        <!-- Segunda parte do slide. -->
+
+                 <div class="container-slide-single">
+                    <img src="/img/DEPOIMENTO1.png">
+                    
+               <h3>Miriam Souza</h3>
+               <p style="font-size: 15px;">Uber</p>
+                <p>O trabalho da Agência Bold foi fundamental para o nosso posicionamento e nossas estratégias de 2021. Juntos
+                     tivemos excelentes resultados e nossos clientes ficaram surpresos com a qualidade. Foi um trabalho
+                      incrível feito a muitas mãos pela Uber e pelo time da Agência Bold.</p>
+                    <img src="/img/RATE.png">  
+                    </div>
+        
+                 <div class="container-slide-single">
+                    <img src="/img/DEPOIMENTO2.png">
+                    <h3>Lucas Mendes</h3>
+                    <p style="font-size: 15px;">The North Face</p>
+                     <p>Buscamos a Agência Bold para nos ajudar com campanhas de growth marketing focadas em um público extremamente específico. O produto teve faturamento maior que 300%.</p>
+                         <img src="/img/RATE.png">  
+                         </div>
+
+                 <div class="container-slide-single">
+                    <img src="/img/DEPOIMENTO3.png">
+                    <h3>Zaya Menphis</h3>
+                    <p style="font-size: 15px;">Rappi</p>    
+                     <p>A estratégia de lançamento da marca não seria a mesma sem o trabalho 
+                        comprometido da Agência Bold. Obrigado ao Vinícius, que abraçou nossos
+                         desafios como um de nós.</p>
+                         <img src="/img/RATE.png">  
+                         </div> 
             </div>    
     </div>
 </section>
+
+
     
 <script src="/js/jquery.js"></script>
 <script src="/js/slick.min.js"></script>
 <script>
     $('.container-slide').slick({
-    dots:true,
-    arrows:false,
-    infinite: true,
-    centerMode: true,
-    centerPadding: 0,
-    speed:1000,
-    slidesToShow: 3,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    pauseOnHover: false
-});
-
-</script> -->
+        dots: true,
+        arrows:false,
+        speed:1000,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover:false,
+        responsive: [
+                            {
+                              breakpoint: 768,
+                              settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                              }
+                            }],
+                });
+</script> 
 </body>
 </html>
