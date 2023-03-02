@@ -54,4 +54,210 @@ font-family:
     border: 0;
  }
 
-  
+ .mochup{
+   display: block;
+    width: 100%; 
+    color: white;
+   text-align: center;
+   padding-top: 100px;
+   }
+
+   .mochup h1{
+      font-size: 50px;
+   }
+
+   .mochup img{
+      max-width: 100%;
+   }
+
+   section.marcas{
+      padding:  100px 0;
+   }
+
+   section.marcas img{
+    width: calc(100%/5);
+   }
+
+   section.porque-nos{
+      padding: 40px 0;
+      background-color: #FBFCFE;
+   }
+
+   section.porque-nos > .center > h2{
+      font-size: 64px;
+      text-align: center;
+      width: 100%;
+   }
+
+   section.porque-nos > .center{
+      max-width: 1280px;
+   }
+
+   section.porque-nos > .center > p{
+      font-size: 14px;
+      text-align: center;
+      width: 100%;
+      color: #ccc;
+   }
+
+   .diferenciais{
+      display: flex;
+      margin-top: 50px;
+   }
+
+   .box-diferenciais{
+      box-shadow: 0px 20px 40px #2426721C;
+      width: 31%;
+      margin-right: 2%;
+      padding: 10px 20px;
+      border-radius: 10px;
+   }
+    
+   .box-diferenciais h3{
+      font-size: 28px;
+      color: black;
+      margin: 20px 0;
+   }
+
+   .box-diferenciais p{
+      font-size: 13px;
+      color: #7E92AC;
+      margin-bottom: 20px;
+   }
+
+   section.cta{
+      background-image: url(/img/BANNER\ IMG.svg);
+      background-size: cover;
+      background-position: center;
+      padding: 20px 10px;
+      min-height: 280px;
+      color: white;
+      text-align: center;
+   }
+
+   section.cta h2,
+   section.cta h4{
+      font-weight: normal;
+      margin: 10px 0;
+   }
+
+   section.cta h2{
+      font-size: 40px;
+   }
+
+   section.cta a{
+      display: inline-block;
+      padding: 8px 15px;
+      border-radius: 7px;
+      font-weight: bold;
+      font-size: 17px;
+      background: #FFDD33;
+      text-decoration: none;
+      color: #0F3FD3;
+   }
+
+   section.beneficios{
+      padding: 50px 0;
+   }
+
+   .lista-beneficios{
+      width: 40%;
+      margin-top: 30px;
+   }
+
+   section.beneficios h1{
+      color: black;
+      font-size: 40px;
+   }
+
+   .lista-beneficios p{
+      color: #7E92AC;
+      vertical-align: middle;
+      font-size: 12px;
+      
+   }
+
+   .lista-beneficios span{
+      display: inline-block;
+      width: calc(100% - 90px);
+   }
+
+   .lista-beneficios img{
+      display: inline-block;
+      vertical-align: middle;
+      width: 70px;
+   }
+
+   .img-beneficios{
+      width: 50%;
+   }
+
+   [type=button]{
+      padding: 10px 17px;
+      border-radius: 7px;
+      font-weight: bold;
+      font-size: 17px;
+      background: #255AFF;
+      color:white;
+      cursor: pointer;
+   }  
+
+   .img-beneficios img{max-width: 100%;}
+
+   /* section.Depoimento{
+      background-color: #FBFCFE;
+      padding: 40px 0;
+   }
+
+   section.Depoimento > h1{
+      text-align: center;
+      font-size: 50px;
+   }
+ */
+   @media screen and (max-width: 768px) {
+      .diferenciais{
+         flex-wrap: wrap;
+      }
+
+      .box-diferenciais{
+         width: 100%;
+         margin-right: 0%;
+      }      
+
+      /* section.marcas{
+         text-align: center;
+      }
+
+      section.marcas img{
+         width: 100%;
+         max-width: 100%;
+        } */
+
+        section.marcas > .center{
+         flex-wrap: nowrap;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      section.marcas img{
+         max-width: 300px;
+         width: 100%;
+      }
+
+      .lista-beneficios,
+      .img-beneficios{
+         width: 100%;
+         margin-bottom: 30px;
+      }
+
+      section.beneficios h1{
+         color: black;
+         font-size: 30px;
+         text-align: center;
+         
+      }
+
+      [type=button]{
+         margin-left: 25%;
+      }
+   }
