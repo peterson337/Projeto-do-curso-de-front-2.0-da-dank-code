@@ -44,7 +44,7 @@ body{
     height: 120px;
 }
 
-.form input[type="submit"]{
+.form input[type="button"]{
     padding-left: 10px;
     display: block;
     margin: 10px auto;
@@ -62,7 +62,6 @@ body{
 
 a{
     position: absolute;
-    left: 89%;
     color: white;
     flex-direction: row;
     text-decoration: none;

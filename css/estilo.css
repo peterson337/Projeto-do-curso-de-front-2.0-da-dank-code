@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: "Fonte engracada";
+    src:url('../_fonts/computer-font.ttf');
+    
+}
+
+@font-face {
+    font-family: "Fonte logo";
+    src:url('../_fonts/bubblegum-sans-regular.otf');
+}
+
+
+body {  
+     background-color: white;
+    color: rgba(0,0,0,1);
+    font-family:arial, sans-serif;
+
+
+}
+div#interface {
+    width: 1000px;
+    background-color: white;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px 10px 10px 10px;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left:780px;
+    top: 40px;
+}
+
+header#cabecalho {
+    border-bottom: 1px black solid; 
+    height:150px;
+background:url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px;
+}
+
+header#cabecalho h1 {
+    font-family: "Fonte engracada", sans-serif;
+    font-size: 30pt;
+    font: weight 900;
+    font-style:italic;
+    padding: 0px;
+    margin-bottom: 0px;
+    color: rgb(16, 169, 240)  
+
+}
+
+header#cabecalho h2 {
+    font-family: "Fonte logo", sans-serif;
+    text-shadow: 0px 0px 3px;
+    padding: 0px;
+    margin-top:0px;
+    color:red
+}
+
+p { 
+    text-align : justify;
+    text-indent : 50px;
+}
+/* Formatação de imagem com legenda*/
+
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img {
+width: 100%;
+height: 100%;
+}
+
+figure.foto-legenda figcaption {
+opacity: 0;
+position: absolute;
+top:0px;
+background-color: rgba(0,0,0,.4);
+color: white;
+width: 100%;
+height: 100%;
+padding: 10px;
+box-sizing: border-box;
+
+/*  transição do Css*/
+transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption {
+opacity: 1;
+}
+/* Formatação do Menu*/
+
+nav#menu ul {
+    list-style: none;
+    text-transform:uppercase;
+    position: absolute;
+    top: -20px;
+    left: 500px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #4e4d4d;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+    background-color: rgb(rgba(255, 255, 255, 0.041))
+
+}
+
+nav#menu li:hover {
+    /*background-color: rgb(19, 16, 16);*/
+    background-color: #000000
+}
+
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a{
+    text-decoration: none;
+    color:rgb(0, 162, 255);
+
+}
+
+footer#rodape a{
+    text-decoration: none;
+    color:rgb(0, 162, 255);
+
+}
+
+footer#rodape a:hover{
+    text-decoration:underline; 
+    color:red
+}
+
+nav#menu a:hover {
+    text-decoration:underline; 
+    color:red
+}
+
+section#corpo{
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid black;
+    padding-right:5px;
+      
+}
+
+table#tabelaspec{
+    border: solid 1px black;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+table#tabelaspec td{
+    border: black 1px solid;
+    padding:10px;
+    text-align: center;
+    text-align: middle;
+}
+
+table#tabelaspec td.ce{
+    color:#ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight:bold ;
+}
+
+table#tabelaspec td.cd{
+    background-color: #cecece;
+}
+
+table#tabelaspec caption{
+    color: #888888;
+    font-size:13pt ;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span{
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top:10px ;
+}
+
+
+
+footer#rodape{
+    clear: both;
+    border: 1px solid black;
+    border-right: 1px solid black;
+ 
+}
+
+footer#rodape p{
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+article#noticia-principal h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color:#dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px; 
+    font-family: Arial, sans-serif;
+}
+
+header#cabecalho-artigo h1{
+    font-family: "Fonte engracada", sans-serif; 
+    font-size: 20pt;
+    color: black;
+    margin-bottom:0px ;
+    margin-top: 0px;
+}
+
+header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: rgb(14, 15, 15);
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    font-family: "Fonte logo";
+}
+
+header#cabecalho-artigo h3{}
+
+.direita{
+    text-align: right;  
+    font-family:arial, sans-serif;
+    color: gray;
+    font-size: 11pt
+}
+
+aside#lateral{
+    display: block;
+    width: 470px ;
+    float: right;
+    padding: 10px;
+    background-color: rgb(209, 209, 209);
+    margin-top:10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+aside#lateral h1 {
+    font-family: "fonte engracada", sans-serif;
+    font-size: 20pt;
+    color: black;
+    margin-top: 0px;
+}
+
+aside#lateral h2 {
+    font-family: "Fonte logo", sans-serif;
+    font-size: 13pt;
+    background-color: black;
+    padding: 5px;
+    color: white 
+
+}
+
+
+/* 
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a: hover {
+        text-decoration: underline;
+}
+*/
+
+div#video{
+    display: block;
+    position: relative;
+    left: 560px;
+    bottom: 00px;
+    width: 440px ;
+    top: -1348px;
+}
+
+div#video-2{
+    display: block;
+    position: relative;
+    width: 440px ;
+    top: 1520px;
+}
+
+h2#video-mais-recente{
+    margin-bottom: 300px;
+}
+
+div#google-glass{
+    display: block;
+    margin-bottom: 100px;
+    
+}

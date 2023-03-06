@@ -46,7 +46,25 @@
                     <p>E veja resultados expressivos dia após dia</p>
                     <br>
                     <img src="/img/macbook.svg">
-                </div>
+                    <section class="tela-notebook"  usemap="#meumapa">
+                        <map name="meumapa">
+                           <area shape="rect" coords="179,202,270,260" href="index.html" target="janela">
+                        <iframe src="index.html" name="janela" class="tela-notebook-iframe"></iframe>
+                        </map>
+                        </section>
+                        </article>
+                        
+                    <div  class="tela-notebook-mobile">
+                        <section class="tela-notebook-mobile"  usemap="#meumapa">
+                        <map name="meumapa">
+                           <area shape="rect" coords="179,202,270,260" href="index.html" target="janela">
+                        <iframe src="index.html" name="janela" class="tela-notebook-mobile-iframe"></iframe>
+                        </map>
+                        </section>
+                        </article>
+                        </section> 
+                    </div>
+                    
             </div><!-- mochup -->
         </div> <!-- center -->
     </section>  <!-- main -->
@@ -248,6 +266,12 @@
         itemsMenu.classList.add('show');
     }
     });
+
+    //  var click = document.querySelector('.click');
+    // click.addEventListener("click",()=> {
+    //     window.location.href='http:127.0.0.1:5500/index.html';
+    // }) 
+
 </script>
 
 </body>

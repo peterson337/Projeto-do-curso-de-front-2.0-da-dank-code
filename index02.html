@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index02.css">
     <input type="number" name="quantidade" id="quantidade" placeholder="Escreva o número de pokemon">
+    <a href="index.html">Página de login</a>
     <br><br><br><br>
     <title>Pokedex</title>
 </head>
@@ -32,12 +33,13 @@ quantidade.classList.remove('focus');
 quantidade.value = '';
 });
 
-if (quantidade.value < 0){
+
+
+if(quantidade.value < 0){
     alert('Por favor, escreva só números positivos.');
     quantidade.value = '';
     return false;
-   }
-})
+   }})
 
 pegaPokemons(1);
 // Requisição.

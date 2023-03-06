@@ -5,6 +5,7 @@
     font-family: Arial;
 }
 
+/* Imagem que setá escrito pokemon */
 body{
     background: url(/img/pokemon.png)no-repeat center center fixed;
     background-size: cover;
@@ -80,7 +81,16 @@ body{
     padding-left: 20px;
 }
 
+a{
+    position: absolute;
+    color: black;
+    flex-direction: row;
+    text-decoration: none;
+}
 
+a:hover{
+ text-decoration: underline;
+}
 
 
 @media screen and (max-width: 768px){

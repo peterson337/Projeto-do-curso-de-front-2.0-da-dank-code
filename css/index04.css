@@ -55,6 +55,7 @@ font-family:
  }
 
  .mochup{
+   position: relative;
    display: block;
     width: 100%; 
     color: white;
@@ -353,11 +354,49 @@ footer{
    color: white;
    font-size: 23px;
    cursor: pointer;
-}/* 12:30 */
+}
+
+section.tela-notebook{
+   position: absolute;
+   top: 248px;
+   left:100px;
+   width: 80%;   
+   height: 60%;
+}
+
+iframe.tela-notebook-iframe{
+   width: 97%;   
+   height: 100%;
+   left: 20px;
+   border:1px solid rgb(118, 117, 117);
+}
+
+
+
+.tela-notebook-mobile{
+   display: none;
+}
+
+   
 
    @media screen and (max-width: 768px) {
+      
+      section.tela-notebook{
+         position: absolute;
+         max-width: 100%;
+         width: 84%;
+         top: 65.5%;
+         height: 30%;
+         left:30px;
+      }
+
+       .tela-notebook-mobile{
+         position: absolute;
+         border:1px solid rgb(118, 117, 117);
+       }
+      
       .items-menu-mobile{
-         display: block;
+         display:  none;
       }
 
       .menu-mobile{
@@ -390,7 +429,6 @@ footer{
          border-bottom: 1px solid rgb(40, 40, 40);
          padding: 8px 0;
       }
-
       section.main .items-menu{
          display: none;
       }
